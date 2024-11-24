@@ -20,4 +20,4 @@ Add the logger package to your project:
 
 ```bash
 go get github.com/iabdulzahid/go-logger
-
+```
