@@ -3,12 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/iabdulzahid/go-logger/logger"
 	"go.uber.org/zap"
 )
 
 func main() {
-	config := logger.Config{
+	config := Config{
 		AppName:            "go-logger",
 		LogLevel:           "info",
 		LogFormat:          "json", // "json" or "plain"
@@ -25,7 +24,7 @@ func main() {
 		Compress:           true,
 	}
 
-	log, err := logger.NewLogger(config)
+	log, err := NewLogger(config)
 	if err != nil {
 		fmt.Println("Error creating logger:", err)
 		return

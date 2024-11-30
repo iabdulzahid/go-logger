@@ -1,4 +1,4 @@
-module github.com/iabdulzahid/go-logger
+module github.com/iabdulzahid/zlogger
 
 go 1.23.3
 
