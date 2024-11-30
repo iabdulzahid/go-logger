@@ -124,9 +124,6 @@ func (l *Logger) Info(msg string, args ...interface{}) {
 				continue
 			}
 			value := args[i+1]
-			vaal := value.(string)
-
-			println("key: ", key, ",value: ", string(vaal))
 			fields = append(fields, zap.Any(key, value))
 		}
 	}
